@@ -1,5 +1,5 @@
 module.exports = function (el, val) {
-  if (!val) {
+  if (val == null) {
     return el.textContent || el.innerText;
   }
 
