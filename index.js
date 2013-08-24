@@ -1,8 +1,9 @@
-module.exports = function (el, val) {
-  if (val == null) {
-    return el.textContent || el.innerText;
-  }
 
-  return el.textContent && (el.textContent = val)
-    || (el.innerText = val);
+var text = 'innerText' in document.createElement('div')
+  ? 'innerText'
+  : 'textContent'
+
+module.exports = function (el, val) {
+  if (val == null) return el[text];
+  el[text] = val;
 };
