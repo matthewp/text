@@ -1,0 +1,9 @@
+{
+  "name": "text",
+  "version": "0.0.2",
+  "description": "Cross browser DOM inner text manipulation",
+  "keywords": ["dom","text","innerText","textContent"],
+  "dependencies": {},
+  "files": ["index.js"],
+  "license": "MIT"
+}
